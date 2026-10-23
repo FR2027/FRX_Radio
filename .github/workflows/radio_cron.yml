@@ -21,7 +21,7 @@ jobs:
 
       - name: 安裝必要套件
         run: |
-          pip install google-genai edge-tts asyncio
+          pip install google-generativeai edge-tts asyncio
 
       - name: 執行 AI DJ 產生腳本
         env:
