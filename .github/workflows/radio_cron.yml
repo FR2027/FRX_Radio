@@ -25,7 +25,7 @@ jobs:
 
       - name: 執行 AI DJ 產生腳本
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ai: ${{ secrets.ai }}
         run: |
           python update_radio.py
 
