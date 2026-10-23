@@ -21,7 +21,7 @@ def generate_dj_script():
     語氣要自然、像真人在說話，不要加入任何括號說明或情緒提示。直接給出要唸出來的文字即可。請使用繁體中文對話 這是FRX Radio
     """
     response = client.models.generate_content(
-        model="gemini-2.5-flash",
+        model="gemini-2.0-flash",
         contents=prompt,
     )
     return response.text.strip()
